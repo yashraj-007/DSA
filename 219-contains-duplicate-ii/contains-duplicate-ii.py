@@ -4,7 +4,7 @@ class Solution(object):
         l = 0
         for i in range(len(nums)):
             if i - l > k:
-                window.discard(nums[l])
+                window.remove(nums[l])
                 l += 1
             if nums[i] in window:
                 return True
